@@ -43,7 +43,7 @@ const projects = ({ data }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let r = await fetch(
     `https://api.github.com/search/repositories?q=user:Vivek377+fork:true&sort=updated&per_page=10&type=Repositories`
   );
